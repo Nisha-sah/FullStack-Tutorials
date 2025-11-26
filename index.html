@@ -1,53 +1,59 @@
-<!Doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-   
-  </head>
-  <body>
-  	<header>
-  		<h1>Welcome to my portfolio</h1>
-  		<p>This is my website</p>
-  	</header>
-  	<nav>
-  		<ul>
-  		<li><a href="#">Home</a></li>
-  		<li><a herf="#">About</a></li>
-  		<li><a href="#">Contact</a></li>
-  		<li><a href="#">Services</a></li>
-  		<li><a href="#">Resume</a></li>
-  		<li><a href="#">Project</a></li>
-  	</ul>
-  	</nav>
-  	<section id="About">
-  		<h2>About Me</h2>
-  		<p>Hello! I am a beginner learning HTML and  CSS</p>
-  	</section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  	<section id="Project">
-  		<h2>My project</h3>
-  		<p>Project details will be added soon</p>
-  	</section>
-  	<section id="Contact">
-  		<h2>Contact me</h2>
-  		
-  	</section>
+<body>
 
-  	<form >
-  		<label for="name">Name:</label>
-  		<input type="text" id="name" placeholder="Name"><br>
+<header class="header">
+  <h1 class="logo">Welcome to my portfolio</h1>
 
-  		<label for="email">Email:</label>
-  		<input type="text" id="email" placeholder="email"><br>
+  <nav class="Navbar">
 
-  		<label for="message">message:</label>
-  		<input type="text" id="messagee" placeholder="Message">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+  </nav>
+</header>
 
 
-  	
-  </body>
-  </html>
+<section class="video-section">
+   <video id="hero-video" autoplay loop muted>
+      <source src="Videos.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</section>
+  <h2 class="abo">About me</h2>
+
+<sectio class ="About">
+
+ <div class ="about">Pragya</div>
+ <div class="about">Herald college</div>
+ <div class="about">abc</div>
+</sectio>
+<section class="Skills">
+  <h3> About my skills</h3>
+  <div class ="skill">HTML</div>
+ <div class="skill">Cascading Style Sheets</div>
+ <div class="skill">Javascript</div>
+</section>
+
+<section class="Project">
+  <h3> About my Projects</h3>
+  <div class ="project">portfolio"</div>
+ <div class="project">Weather APPS</div>
+ <div class="project">Leave management System</div>
+</section>
+
+
+
+
+</body>
+</html>
