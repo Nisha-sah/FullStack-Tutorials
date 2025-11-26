@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #2c3e50;
+  color: white;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;  
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.Navbar a:hover {
+  color: red;
+}
+
+.video-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+
+
+#hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.abo{
+  text-align: center;
+ margin-top: 10px;
+}
+
+.About{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.about {
+  background: skyblue;
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
