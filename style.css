@@ -1,8 +1,11 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
 
 .header {
   background: #2c3e50;
@@ -11,15 +14,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  gap: 20px; /* space between toggle and logo */
 }
 
-
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 
 
 .Navbar ul {
   list-style: none;
-  display: flex;
-  gap: 30px;  
+  display: flex;  /* Desktop flex layout */
+  gap: 30px;
 }
 
 .Navbar a {
@@ -30,16 +38,25 @@
 }
 
 .Navbar a:hover {
-  color: red;
+  color: #ff4757; /* nicer red hover */
 }
+
+/* Toggle Button (hidden on desktop) */
+.menu-toggle {
+  display: block;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 
 .video-section {
   position: relative;
   height: 70vh;
   overflow: hidden;
 }
-
-
 
 #hero-video {
   width: 100%;
@@ -53,25 +70,111 @@
   text-align: center;
 }
 
-.abo{
+.abo {
   text-align: center;
- margin-top: 10px;
+  margin-top: 10px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.About{
+
+   /*grid*/
+.About, .Skills, .Project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 40px;
 }
 
-.about {
-  background: skyblue;
+.about, .skill, .project {
+  background: #3498db;
   color: white;
   padding: 50px;
   border-radius: 12px;
   font-size: 1.4rem;
   font-weight: bold;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.about:hover, .skill:hover, .project:hover {
+  transform: translateY(-5px);
+  background: #2980b9;
+}
+
+footer p {
+  text-align: center;
+  background: #3498db;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+}
+/* 
+   MEDIA QUERIES
+ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .About, .Skills, .Project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Hide menu by default on mobile */
+  .Navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #2c3e50;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  /* Show toggle button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Stack grids vertically */
+  .About, .Skills, .Project {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about, .skill, .project {
+    padding: 30px;
+    font-size: 1.2rem;
+  }
+
+  #hero-video {
+    height: 50vh;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  #hero-video {
+    height: 40vh;
+  }
+
+  .about, .skill, .project {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* 
+   JS TOGGLE MENU CLASS
+ */
+.show-menu {
+  display: flex !important;
 }

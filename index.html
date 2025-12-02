@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -12,48 +14,70 @@
 <header class="header">
   <h1 class="logo">Welcome to my portfolio</h1>
 
-  <nav class="Navbar">
 
+  <nav class="Navbar">
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
+   <button class="menu-toggle" id="menu-button">
+  <i class="fa fa-bars"></i>
+</button>
   </nav>
 </header>
 
-
 <section class="video-section">
-   <video id="hero-video" autoplay loop muted>
-      <source src="Videos.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+   <video id="hero-video" controls autoplay loop muted playsinline>
+    <source src="4488804-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 </section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
   <h2 class="abo">About me</h2>
 
-<sectio class ="About">
-
- <div class ="about">Pragya</div>
- <div class="about">Herald college</div>
- <div class="about">abc</div>
-</sectio>
-<section class="Skills">
-  <h3> About my skills</h3>
-  <div class ="skill">HTML</div>
- <div class="skill">Cascading Style Sheets</div>
- <div class="skill">Javascript</div>
+  <div class="About">
+    <div class="about">Pragya</div>
+    <div class="about">Herald college</div>
+    <div class="about">Kathmandu</div>
+  </div>
 </section>
 
-<section class="Project">
-  <h3> About my Projects</h3>
-  <div class ="project">portfolio"</div>
- <div class="project">Weather APPS</div>
- <div class="project">Leave management System</div>
+<!-- SKILLS SECTION -->
+<section id="skills" class="section">
+  <h2 class="abo">About my skills</h2>
+
+  <div class="Skills">
+    <div class="skill">HTML</div>
+    <div class="skill">Cascading Style Sheets</div>
+    <div class="skill">JavaScript</div>
+  </div>
 </section>
 
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+  <h2 class="abo">About my Projects</h2>
 
+  <div class="Project">
+    <div class="project">Portfolio</div>
+    <div class="project">Weather App</div>
+    <div class="project">Leave Management System</div>
+  </div>
+</section>
 
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+  <h2 class="abo">Contact Me</h2>
+  <p>Email: sahnisha213@gmil.com</p>
+</section>
+<footer>
+    <p>© 2025 Pragya. All rights reserved.</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
