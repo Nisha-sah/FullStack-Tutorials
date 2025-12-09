@@ -1,7 +1,10 @@
 {
-"movies": [
-{ "id": 1, "title": "Inception", "genre": "Sci-Fi", "year": 2010 },
-{ "id": 2, "title": "Pulp Fiction", "genre": "Crime", "year": 1994 },
-{ "id": 3, "title": "Dune", "genre": "Sci-Fi", "year": 2021 }
-]
+  "movies": [
+    {
+      "id": "c6b8",
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "year": 2010
+    }
+  ]
 }
